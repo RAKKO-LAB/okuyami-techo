@@ -1,0 +1,236 @@
+/* おくやみ手帳 サイト共通スタイル
+   アプリ（src/theme/index.ts）と同じ配色を使う。
+   見出しは明朝、本文はゴシック。行間はアプリと同じく広めに取る。 */
+
+:root {
+  --bg: #F9F7F4;
+  --text: #3D3D3D;
+  --subtext: #8E8E8E;
+  --accent: #7B9E87;
+  --accent-dark: #6B8E77;
+  --border: #E8E4DF;
+  --card: #FFFFFF;
+  --warn-bg: #FBF6E8;
+  --warn-border: #E8D9A8;
+  --note-bg: #EEF3EE;
+  --note-border: #D5E0D5;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans JP", Meiryo, sans-serif;
+  line-height: 1.8;
+  padding: 0 16px 64px;
+  font-size: 15px;
+}
+
+.wrap {
+  max-width: 720px;
+  margin: 0 auto;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 32px 28px;
+}
+
+/* サイト共通ヘッダー */
+.site-header {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 20px 4px 16px;
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.site-header a.brand {
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", "YuMincho", serif;
+  font-size: 17px;
+  color: var(--text);
+  text-decoration: none;
+  letter-spacing: 0.06em;
+}
+.site-header nav { margin-left: auto; font-size: 13px; }
+.site-header nav a { color: var(--subtext); text-decoration: none; margin-left: 14px; }
+.site-header nav a:hover { color: var(--accent); }
+
+h1 {
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", "YuMincho", serif;
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  margin: 0 0 20px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 17px;
+  margin: 36px 0 10px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--border);
+  letter-spacing: 0.02em;
+}
+
+h3 { font-size: 15px; margin: 24px 0 6px; color: var(--accent-dark); }
+
+p { margin: 0 0 14px; }
+ul, ol { padding-left: 1.3em; margin: 0 0 14px; }
+li { margin-bottom: 6px; }
+a { color: var(--accent); }
+strong { font-weight: 600; }
+hr { border: none; border-top: 1px solid var(--border); margin: 32px 0; }
+
+/* 条文などの引用 */
+blockquote {
+  margin: 16px 0;
+  padding: 14px 16px;
+  background: var(--bg);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0;
+  font-size: 14px;
+}
+blockquote p:last-child { margin-bottom: 0; }
+
+/* 冒頭の要点 */
+.summary {
+  background: var(--note-bg);
+  border: 1px solid var(--note-border);
+  border-radius: 10px;
+  padding: 18px 20px;
+  margin: 0 0 28px;
+}
+.summary h2 {
+  margin: 0 0 10px;
+  border: none;
+  padding: 0;
+  font-size: 15px;
+  color: var(--accent-dark);
+}
+.summary ul { margin-bottom: 0; }
+
+/* 覚えておきたいこと */
+.remember {
+  background: var(--warn-bg);
+  border: 1px solid var(--warn-border);
+  border-radius: 10px;
+  padding: 18px 20px;
+  margin: 32px 0;
+}
+.remember h2 {
+  margin: 0 0 10px;
+  border: none;
+  padding: 0;
+  font-size: 15px;
+}
+.remember ul { margin-bottom: 0; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+  font-size: 14px;
+}
+th, td {
+  border: 1px solid var(--border);
+  padding: 8px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+th { background: var(--bg); font-weight: 600; }
+
+/* 出典 */
+.sources { font-size: 13px; color: var(--subtext); }
+.sources a { word-break: break-all; }
+.sources h2 { font-size: 15px; color: var(--text); }
+
+/* 記事一覧 */
+.article-list { list-style: none; padding: 0; margin: 0; }
+.article-list li {
+  border-bottom: 1px solid var(--border);
+  padding: 18px 0;
+  margin: 0;
+}
+.article-list li:last-child { border-bottom: none; }
+.article-list a {
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", "YuMincho", serif;
+  font-size: 17px;
+  text-decoration: none;
+  color: var(--text);
+  display: block;
+  margin-bottom: 6px;
+  line-height: 1.6;
+}
+.article-list a:hover { color: var(--accent-dark); }
+.article-list .desc { color: var(--subtext); font-size: 13.5px; margin: 0; }
+.article-list .date {
+  color: var(--subtext);
+  font-size: 12px;
+  margin: 6px 0 0;
+  letter-spacing: 0.04em;
+}
+
+/* 記事本文の公開日。h1 の直下に置く控えめな一行 */
+.article-date {
+  color: var(--subtext);
+  font-size: 12.5px;
+  letter-spacing: 0.04em;
+  margin: -4px 0 26px;
+}
+
+.lead { color: var(--subtext); font-size: 14px; margin-bottom: 28px; }
+.meta { color: var(--subtext); font-size: 13px; margin-top: 32px; }
+
+/* アフィリエイト枠。articles/affiliate.json に URL が入っている枠だけ描画される。
+   本文と地続きに見えないよう、ボタンとして明確に分ける。 */
+.affiliate {
+  margin: 32px 0 8px;
+  text-align: center;
+}
+.affiliate-btn {
+  display: inline-block;
+  padding: 13px 26px;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 14.5px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.affiliate-btn:hover { background: var(--accent-dark); }
+.affiliate-btn:focus-visible { outline: 2px solid var(--accent-dark); outline-offset: 3px; }
+.affiliate-note {
+  color: var(--subtext);
+  font-size: 12px;
+  margin: 8px 0 0;
+}
+
+.disclaimer {
+  margin-top: 36px;
+  padding: 14px 16px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 13px;
+  color: var(--subtext);
+}
+
+footer {
+  max-width: 720px;
+  margin: 32px auto 0;
+  text-align: center;
+  color: var(--subtext);
+  font-size: 12px;
+  line-height: 2;
+}
+footer a { color: var(--subtext); margin: 0 8px; }
+
+@media (max-width: 560px) {
+  .wrap { padding: 24px 18px; border-radius: 10px; }
+  h1 { font-size: 21px; }
+  body { padding: 0 10px 48px; }
+}

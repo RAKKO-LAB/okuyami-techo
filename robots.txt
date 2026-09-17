@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rakko-lab.github.io/okuyami-techo/sitemap.xml
