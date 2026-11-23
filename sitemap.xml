@@ -2,17 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://rakko-lab.github.io/okuyami-techo/articles/</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://rakko-lab.github.io/okuyami-techo/</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://rakko-lab.github.io/okuyami-techo/about.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
@@ -78,6 +78,16 @@
   <url>
     <loc>https://rakko-lab.github.io/okuyami-techo/articles/souzoku-fudosan-baikyaku.html</loc>
     <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rakko-lab.github.io/okuyami-techo/articles/ihin-seiri.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rakko-lab.github.io/okuyami-techo/articles/mochu-hagaki.html</loc>
+    <lastmod>2026-11-22</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
