@@ -181,6 +181,13 @@ th { background: var(--bg); font-weight: 600; }
   margin: -4px 0 26px;
 }
 
+/* 広告を含む記事だけ、公開日の直下に出す PR 表記 */
+.pr-note {
+  color: var(--subtext);
+  font-size: 12.5px;
+  margin: -18px 0 26px;
+}
+
 .lead { color: var(--subtext); font-size: 14px; margin-bottom: 28px; }
 .meta { color: var(--subtext); font-size: 13px; margin-top: 32px; }
 
