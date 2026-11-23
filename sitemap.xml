@@ -2,17 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://rakko-lab.github.io/okuyami-techo/articles/</loc>
-    <lastmod>2026-11-22</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://rakko-lab.github.io/okuyami-techo/</loc>
-    <lastmod>2026-11-22</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://rakko-lab.github.io/okuyami-techo/about.html</loc>
-    <lastmod>2026-11-22</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
@@ -26,8 +26,23 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://rakko-lab.github.io/okuyami-techo/articles/kenko-hoken.html</loc>
+    <lastmod>2026-11-24</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://rakko-lab.github.io/okuyami-techo/articles/izoku-nenkin.html</loc>
     <lastmod>2026-09-18</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rakko-lab.github.io/okuyami-techo/articles/seimei-hoken.html</loc>
+    <lastmod>2026-11-24</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rakko-lab.github.io/okuyami-techo/articles/sougi-nagare.html</loc>
+    <lastmod>2026-11-24</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -56,8 +71,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://rakko-lab.github.io/okuyami-techo/articles/isan-bunkatsu.html</loc>
+    <lastmod>2026-11-24</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://rakko-lab.github.io/okuyami-techo/articles/junkakutei-shinkoku.html</loc>
     <lastmod>2026-09-18</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rakko-lab.github.io/okuyami-techo/articles/nenmatsu-chosei.html</loc>
+    <lastmod>2026-11-24</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -83,6 +108,16 @@
   <url>
     <loc>https://rakko-lab.github.io/okuyami-techo/articles/ihin-seiri.html</loc>
     <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rakko-lab.github.io/okuyami-techo/articles/digital-ihin.html</loc>
+    <lastmod>2026-11-24</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rakko-lab.github.io/okuyami-techo/articles/jidosha.html</loc>
+    <lastmod>2026-11-24</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
